@@ -20,7 +20,7 @@ API Key: 1da4a2bb0e8b8d3f0295172c2ca9360a
 API ID: b4d5b79d
 
 ```
-{exapmle: https://api.edamam.com/search?q=chicken%20AND%20barbecued&app_id=b4d5b79d&app_key=1da4a2bb0e8b8d3f0295172c2ca9360a&from=0&to=2 }
+{exapmle: https://api.edamam.com/search?q=dinner&app_id=b4d5b79d&app_key=1da4a2bb0e8b8d3f0295172c2ca9360a }
 
 {
 "q": "chicken AND barbecued",
