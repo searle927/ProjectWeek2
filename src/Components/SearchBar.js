@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
 
-function SearchBar() {
-  return( 
-    <h1>SearchBar</h1>
-  )
-}
+// function SearchBar() {
+//   return( 
+//     <h1>SearchBar</h1>
+//   )
+// }
 
 
-export default SearchBar;
+// export default SearchBar;
