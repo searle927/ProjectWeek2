@@ -1,11 +1,18 @@
-// import React from 'react';
+import React from 'react'
 
+const RecipeDetails = ({ingredients}) => {
+    return ingredients.map(ingredients => {
+        console.log(ingredients)
+        return (
 
-// function RecipeDetails() {
-//   return( 
-//     <h3>RecipeDetails</h3>
-//   )
-// }
+           <div>
+               <ul>{ingredients.text}</ul>
+            </div>
+           
 
+        );
+    });
+      
+};
 
-// export default RecipeDetails;
+export default RecipeDetails;
