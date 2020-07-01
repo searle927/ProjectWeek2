@@ -40,11 +40,12 @@ const App = () => {
       <input type="text" placeholder="Search Food" onChange={onChange} value={query}/>
       <input type="submit" value="search" />
       </form>
+      <section>
       <div className="recipes">
         {recipes!== []&& recipes.map(recipe =>
          <Recipe recipe={recipe}/>)}
-         
         </div> 
+        </section>
     </div>
   );
 };

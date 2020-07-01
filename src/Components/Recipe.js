@@ -7,31 +7,17 @@ const Recipe = ({recipe}) => {
   return(
     <div className="recipe">
       <h2>{label}</h2>
-      <img src={image} alt={label} />
+      <img src={image} alt={label} /><br />
       <a href={url} target="_blank" rel="">
         Learn More on Website!
       </a>
-      <FavButton />
       <RecipeDetails ingredients={ingredients}/>
-      {/* <button>Favorite This Recipe</button> */}
+      <FavButton />
     </div>
   );
 };
 
-// const Recipe = ({title, calories, image, ingredients}) => {
-//   return(
-//     <div>
-//       <h1>{title}</h1>
-//       <p>{calories}</p>
-//       <img src={image} alt=""/>
-//       <ul>
-//         {ingredients.map(ingredient =>(
-//           <li>{ingredient.text}</li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
+
 
 export default Recipe;
 

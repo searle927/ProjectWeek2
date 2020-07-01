@@ -1,12 +1,11 @@
-import React from 'react';
-import { Link } from "react-router";
-// import App from '../App';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-
-export default function NavBar() {
+export default function App() {
   return (
     <Router>
-      <div>
+      <div className="Nav">
+        <h2>Love What You Eat</h2>
         <nav>
           <ul>
             <li>
@@ -18,10 +17,11 @@ export default function NavBar() {
           </ul>
         </nav>
 
-
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/favorites">
-            <About />
+            <Favorites />
           </Route>
           <Route path="/">
             <Home />
@@ -33,20 +33,9 @@ export default function NavBar() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return <h2></h2>;
 }
 
-function About() {
-  return <h2>Favorites</h2>;
+function Favorites() {
+  return <h2></h2>;
 }
-
-  
-    {/* <h3>Lets Get <span>Cooking</span>!</h3>
-     <nav className="navbar">
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Favorites</a></li>
-      </ul>
-     </nav> */}
-
-

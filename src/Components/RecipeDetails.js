@@ -6,7 +6,9 @@ const RecipeDetails = ({ingredients}) => {
         return (
 
            <div>
-               <ul>{ingredients.text}</ul>
+               <ul> 
+                    <li className="Ingredients">{ingredients.text}</li>
+               </ul>
             </div>
            
 
