@@ -1,5 +1,6 @@
 body {
   background-image: url("https://images.unsplash.com/photo-1464306208223-e0b4495a5553?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
   margin: 20px;
 }
 .App {
@@ -8,7 +9,6 @@ body {
 
  .Nav {
   display: flex;
-  /* background-color: #631c1c; */
   border: solid #631c1c;
 } 
 Nav ul{
@@ -20,15 +20,22 @@ Nav li {
   text-decoration: none;
 }
 h2 {
-  font-size: 15px;
+  font-size: 25px;
   color: #374785;
   text-align: center;
   margin-top: 16px;
   margin-left: 10px;
 }
+h3 {
+  color: #374785;
+  text-align: center;
+  margin-top: 16px;
+  margin-left: 10px;
+  font-size: 15;
+}
 img {
   height: 60vh;
-  width: 60vw;
+  width: 80vw;
 }
 input[type="radio"] {
   display: none;
@@ -45,6 +52,7 @@ h1 {
 }
 li .Ingredients {
   color: #374785;
+  margin-left: 100px;
 }
 .Ingredients {
   text-align: left;

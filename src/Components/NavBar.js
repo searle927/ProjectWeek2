@@ -6,7 +6,7 @@ export default function App() {
   return (
    
       <div className="Nav">
-        <h2>Eat Good!</h2>
+        <h3>Eat Good!</h3>
         <nav>
           <ul>
             <li>

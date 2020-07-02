@@ -37,11 +37,8 @@ const App = () => {
   return(
     <div className="App">
       <NavBar />
-      {/* <Header /> */}
-     {/* <h1>Search For Your Favorite Recipe!</h1> */}
 
      <Switch>
-          
           <Route exact path="/" component={Header} />
           <Route exact path="/desserts" component={Desserts} />
       </Switch>
@@ -49,9 +46,6 @@ const App = () => {
       <input type="text" placeholder="Search Food" onChange={onChange} value={query}/>
       <input type="submit" value="search" />
       </form>
-      {/* <Switch>
-      
-      </Switch> */}
       <section>
       <div className="recipes">
         {recipes!== []&& recipes.map(recipe =>
