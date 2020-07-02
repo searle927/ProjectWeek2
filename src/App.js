@@ -47,7 +47,7 @@ const App = () => {
       <div className="recipes">
         {recipes!== []&& recipes.map(recipe =>
          <Recipe recipe={recipe}/>)}
-         <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt=""></img>
+         {/* <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt=""></img> */}
         </div> 
         </section>
     </div>
