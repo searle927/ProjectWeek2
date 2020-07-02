@@ -5,6 +5,7 @@ import Recipe from './Components/Recipe';
 import NavBar from './Components/NavBar';
 import Desserts from './Components/Desserts';
 import {Route, Switch} from 'react-router-dom';
+import Header from './Components/Header';
 
 const App = () => {
 
@@ -36,15 +37,21 @@ const App = () => {
   return(
     <div className="App">
       <NavBar />
-      {/* <Route exact path="/desserts" component={Desserts} /> */}
-     <h1>Search For Your Favorite Recipe!</h1>
+      {/* <Header /> */}
+     {/* <h1>Search For Your Favorite Recipe!</h1> */}
+
+     <Switch>
+          
+          <Route exact path="/" component={Header} />
+          <Route exact path="/desserts" component={Desserts} />
+      </Switch>
       <form className="search-form" onSubmit={onSubmit}>
       <input type="text" placeholder="Search Food" onChange={onChange} value={query}/>
       <input type="submit" value="search" />
       </form>
-      <Switch>
-          <Route exact path="/desserts" component={Desserts} />
-      </Switch>
+      {/* <Switch>
+      
+      </Switch> */}
       <section>
       <div className="recipes">
         {recipes!== []&& recipes.map(recipe =>

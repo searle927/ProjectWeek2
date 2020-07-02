@@ -17,17 +17,7 @@ export default function App() {
             </li>
           </ul>
         </nav>
-
-        
       </div>
     
   );
 }
-
-// function Home() {
-//   return <h2></h2>;
-// }
-
-// function Desserts() {
-//   return <h2></h2>;
-// }
