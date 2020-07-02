@@ -3,7 +3,7 @@
 ## Project Links
 
 - [Project-2 Repo Link](https://github.com/searle927/Project-2)
-- [add your deployment link]()
+- [Deployment link](https://jovial-wing-ca574a.netlify.app/)
 
 ## Project Description
 
@@ -108,39 +108,70 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | --- | :---: |  
 | App |   | 
 | NavBar |   | 
-| MainPage |    | 
+| Header |    | 
 | Recipes |    | 
-| RecipeDetails |    | 
+| RecipeDetails |    |
+| Dessert |    |
+| Ratings |    |
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| NavBar | H | 1 hr |  |   |
-| Create React App file and Components | H | 1.5hrs|   |   |
-| Search Bar & Button | H | 1.5hrs|  |   |
-| Link Pages | H | 1.5hrs|  |   |
-| Allowing top 5-8 recipes to show | M | 3hrs|  |   |
-| Create my favorites page | H | 5hrs|  |   |
-| CSS Styling | H | 8hrs|  |   |
-| Figure out how to call an error when there's no recipes from the search| M | 5hrs|  |   |
-| Figuring what the API should call | H | 4hrs|  |   |
-| Home Page Display | H | 1hrs|  |   |
-| Recipes Display | H | 2hrs|  |   |
-| FavRecipes Display | H | 2hrs|  |   |
-| Media Queries | H | 1.5hrs|  |   |
-| Total | H | 37hrs | - | - |
+| Component | Priority | Estimated Time | Time Invetsted | 
+| --- | :---: |  :---: | :---: | 
+| NavBar | H | 1 hr | 3 hrs |
+| Create React App file and Components | H | 1.5hrs| 2hrs  |
+| Search Bar & Button | H | 1.5hrs| 1.5hr |
+| Link Pages | H | 1.5hrs| 5hrs |
+| Allowing top 5-8 recipes to show | M | 3hrs| .5hrs |
+| CSS Styling | H | 8hrs| 7hrs |
+| Figure out how to call an error when there's no recipes from the search| L | 5hrs| - |
+| Figuring what the API should call | H | 4hrs| 5hrs |
+| Home Page Display | H | 1hrs| 1hr |
+| Recipes Display | H | 2hrs| 3hrs |
+| FavRecipes Display | H | 2hrs| 3hrs |
+| Media Queries | H | 1.5hrs| 2hr |
+| Technical Difficulties - Broken Code From Mistakes | H | - | 5hrs |
+| Total | H | 37hrs | 38hrs |  |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+Axios - used these articles... 'https://www.npmjs.com/package/axios' and 'https://stackoverflow.com/questions/46733354/use-async-await-with-axios-in-react-js' 
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+The Ratings Component
+
+const Ratings = () => {
+    const [rating, setRating] = useState(null);
+    const [hover, setHover] = useState(null);
+    
+    return (
+    <div>
+        {[...Array(5)].map((star, i) => {
+            const ratingValue = i + 1;
+
+            return (
+            <label>
+                <input 
+                type="radio" 
+                name="rating" 
+                value={ratingValue} 
+                onClick={() => setRating(ratingValue)}
+                
+                />
+                <FaStar className="star" 
+                color={ratingValue < (hover || rating) ? "#ffc107" : "#e4e5e9"} 
+                size={50}
+                onMouseEnter={() => setHover(ratingValue)}
+                onMouseLeave={() => setHover(null)}
+                />
+            </label>
+            );
+        })}
+    </div>
+    );
+};
 ```
