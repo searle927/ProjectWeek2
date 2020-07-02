@@ -2,6 +2,7 @@ import React from 'react';
 import RecipeDetails from './RecipeDetails';
 import FavButton from './FavButton';
 
+
 const Recipe = ({recipe}) => {
   const{label, image, url, ingredients} = recipe.recipe;
   return(
@@ -16,7 +17,6 @@ const Recipe = ({recipe}) => {
     </div>
   );
 };
-
 
 
 export default Recipe;

@@ -10,8 +10,6 @@ const RecipeDetails = ({ingredients}) => {
                     <li className="Ingredients">{ingredients.text}</li>
                </ul>
             </div>
-           
-
         );
     });
       

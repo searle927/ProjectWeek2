@@ -6,13 +6,9 @@ body {
   text-align: center;
 }
 
-.Nav {
+ .Nav {
   display: flex;
-  /* background-color: #b373f4; */
-  color: white;
-  padding-left: 5px;
-  font-weight: 700;
-}
+} 
 Nav ul{
   display:flex;
   list-style-type: none;
@@ -22,14 +18,21 @@ Nav li {
   text-decoration: none;
 }
 h2 {
-  font-size: 13px;
+  font-size: 15px;
   color: #374785;
+  text-align: center;
+  margin-top: 16px;
+}
+img {
+  height: 60vh;
+  width: 60vw;
 }
 a {
   text-decoration: none;
   color: #f76c6c;
   justify-content: space-around;
   font-weight: 700;
+  padding-right: 25px;
 }
 h1 {
   color: #f76c6c;

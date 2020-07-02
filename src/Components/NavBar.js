@@ -5,7 +5,7 @@ export default function App() {
   return (
     <Router>
       <div className="Nav">
-        <h2>Love What You Eat</h2>
+        <h2>Eat Good!</h2>
         <nav>
           <ul>
             <li>
@@ -17,8 +17,6 @@ export default function App() {
           </ul>
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/favorites">
             <Favorites />

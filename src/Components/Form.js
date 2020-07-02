@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {} from 'react'
+
 
 function Form() {
     return (
-        <form className="search-form" onSubmit={onSubmit}>
-      <input type="text" placeholder="Search Food" onChange={onChange} value={query}/>
-      <input type="submit" value="search" />
-      </form>
-            
-    )
-}
+      <div className="form">
+      <form onSubmit={handleSubmit} />
+      <input type='text' placeholder='Search Food' onChange={handleChange} value={input} />
+      <input type='submit'/> 
+      </div>     
+    );
+};
 
-export default Form
+export default Form;
