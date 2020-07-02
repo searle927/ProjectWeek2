@@ -30,9 +30,9 @@ img {
   height: 60vh;
   width: 60vw;
 }
-/* input[type="radio"] {
+input[type="radio"] {
   display: none;
-} */
+}
 a {
   text-decoration: none;
   color: #f76c6c;
@@ -71,7 +71,10 @@ div.recipe {
   .recipes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+  }
+  img {
+    height: 35vh;
+    width: 35vw;
   }
 }
 
@@ -79,6 +82,16 @@ div.recipe {
 .recipes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+img {
+  height: 22vh;
+  width: 22vw;
+}
+input {
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 25px;
 }
 
 }

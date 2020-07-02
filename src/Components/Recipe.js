@@ -1,6 +1,5 @@
 import React from 'react';
 import RecipeDetails from './RecipeDetails';
-import FavButton from './FavButton';
 import Ratings from './Ratings';
 
 
@@ -15,7 +14,6 @@ const Recipe = ({recipe}) => {
         Learn More on Website!
       </a>
       <RecipeDetails ingredients={ingredients}/>
-      <FavButton />
       <h4>Rate Recipe!</h4>
       <Ratings />
     </div>

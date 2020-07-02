@@ -18,14 +18,7 @@ export default function App() {
           </ul>
         </nav>
 
-        <Switch>
-          <Route path="/desserts">
-            <Desserts />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        
       </div>
     </Router>
   );
