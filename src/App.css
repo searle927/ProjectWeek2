@@ -26,13 +26,6 @@ h2 {
   margin-top: 16px;
   margin-left: 10px;
 }
-h3 {
-  color: #374785;
-  text-align: center;
-  margin-top: 16px;
-  margin-left: 10px;
-  font-size: 15;
-}
 img {
   height: 60vh;
   width: 80vw;
@@ -46,6 +39,7 @@ a {
   justify-content: space-around;
   font-weight: 700;
   padding-right: 25px;
+  font-size: 25px
 }
 h1 {
   color: #f76c6c;

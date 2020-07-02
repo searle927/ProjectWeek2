@@ -11,7 +11,7 @@ const Recipe = ({recipe}) => {
       <h2>{label}</h2>
       <img src={image} alt={label} /><br />
       <a href={url} target="_blank" rel="">
-        Learn More on Website!
+        See Directions On Website!
       </a>
       <RecipeDetails ingredients={ingredients}/>
       <h4>Rate Recipe!</h4>
