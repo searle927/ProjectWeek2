@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function App() {
   return (
-    <Router>
+   
       <div className="Nav">
         <h2>Eat Good!</h2>
         <nav>
@@ -20,14 +20,14 @@ export default function App() {
 
         
       </div>
-    </Router>
+    
   );
 }
 
-function Home() {
-  return <h2></h2>;
-}
+// function Home() {
+//   return <h2></h2>;
+// }
 
-function Desserts() {
-  return <h2></h2>;
-}
+// function Desserts() {
+//   return <h2></h2>;
+// }
