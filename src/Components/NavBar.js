@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import Desserts from './Desserts';
 
 export default function App() {
   return (
@@ -12,14 +13,14 @@ export default function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/favorites">Favorites</Link>
+              <Link to="/desserts">Desserts</Link>
             </li>
           </ul>
         </nav>
 
         <Switch>
-          <Route path="/favorites">
-            <Favorites />
+          <Route path="/desserts">
+            <Desserts />
           </Route>
           <Route path="/">
             <Home />
@@ -34,6 +35,6 @@ function Home() {
   return <h2></h2>;
 }
 
-function Favorites() {
+function Desserts() {
   return <h2></h2>;
 }

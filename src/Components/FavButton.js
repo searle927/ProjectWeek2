@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const FavButton = ({ children, type, onClick }) => {
+export const Rating = ({ children, type, onClick }) => {
 
     return (
         <button onClick={onClick}  type={type}>
@@ -10,4 +10,4 @@ export const FavButton = ({ children, type, onClick }) => {
     );
 };
 
-export default FavButton;
+export default Rating;

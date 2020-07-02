@@ -3,7 +3,7 @@ import './App.css';
 import Axios from 'axios';
 import Recipe from './Components/Recipe';
 import NavBar from './Components/NavBar';
-//import Form from './Components/Form'
+//import Desserts from './Components/Desserts';
 
 
 const App = () => {
@@ -36,6 +36,7 @@ const App = () => {
   return(
     <div className="App">
       <NavBar />
+    
      <h1>Search For Your Favorite Recipe!</h1>
       <form className="search-form" onSubmit={onSubmit}>
       <input type="text" placeholder="Search Food" onChange={onChange} value={query}/>
