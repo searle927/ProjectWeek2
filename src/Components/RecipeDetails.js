@@ -4,7 +4,6 @@ const RecipeDetails = ({ingredients}) => {
     return ingredients.map(ingredients => {
         console.log(ingredients)
         return (
-
            <div>
                <ul> 
                     <li className="Ingredients">{ingredients.text}</li>
